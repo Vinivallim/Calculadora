@@ -1,0 +1,20 @@
+import React from 'react';
+import { StatusBar, StyleSheet, View } from 'react-native';
+import { Icon } from 'react-native-elements';
+import Calculator from './Calculator';
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <StatusBar barStyle="light-content" />
+      <Calculator />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#000000',
+  },
+});
